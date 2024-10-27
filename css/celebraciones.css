@@ -1,0 +1,49 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.flotante {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; /* Índice más alto para que esté encima */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+#anuncio {
+
+
+    padding: 15px;
+    height: 40vh;
+    width: 60vh;
+    margin: 20px auto;
+    max-width: 500px;
+    background-color: #ffdd57;
+    color: #010000;
+    font-size: 1.2em;
+    border-radius: 5px;
+    position: absolute;
+    display: none; /* Oculto por defecto */
+}
+
+#cerrar-anuncio {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2em;
+    color: #000000;
+    cursor: pointer;
+}
+.pos{
+    position: relative;
+    z-index: 1;
+}
